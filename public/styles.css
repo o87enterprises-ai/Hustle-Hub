@@ -1,0 +1,45 @@
+:root{--bg:#0b1626;--card:#13233a;--ink:#f1f6fb;--mut:#9db0c6;--line:#22364f;--brand:#3ee09a;--brand2:#3ee09a;--warn:#fbbf24;--r:16px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:76px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;max-width:900px;margin:auto}
+.brand{display:flex;gap:10px;align-items:center}.brand h1{margin:0;font-size:1.2rem}.brand p{margin:0;font-size:.75rem;color:var(--mut)}
+.banner{background:#2a2410;color:#fde68a;font-size:.82rem;padding:8px 16px;text-align:center}
+main{max-width:900px;margin:auto;padding:16px}
+.panel h2{margin:.2rem 0 .2rem}.sub{color:var(--mut);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin-bottom:12px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:10px;text-align:center}
+.stat b{display:block;font-size:1.25rem}.stat span{font-size:.75rem;color:var(--mut)}
+form{display:grid;gap:10px}
+label{display:grid;gap:4px;font-size:.85rem;font-weight:600}
+input,select,textarea{font:inherit;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus,button:focus-visible{outline:3px solid var(--brand2);outline-offset:1px}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:130px}
+.btn{font:inherit;font-weight:600;border:0;border-radius:10px;padding:10px 16px;background:var(--brand);color:#062a1c;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--brand);border:1px solid var(--brand)}
+.btn.sm{padding:5px 10px;font-size:.8rem}.btn.danger{background:transparent;color:#f87171;border:1px solid #f87171}
+.item{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;border-bottom:1px solid var(--line);padding:10px 0}
+.item:last-child{border:0}.item small,.mut{color:var(--mut)}
+.tag{display:inline-block;font-size:.72rem;padding:2px 8px;border-radius:99px;background:color-mix(in srgb,var(--brand) 15%,transparent);color:var(--brand);font-weight:600}
+.price{font-weight:700;font-size:1.1rem}
+.income{color:var(--brand);font-weight:700}.expense{color:var(--warn);font-weight:700}
+.tiers{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.tier.pop{border:2px solid var(--brand)}.tier ul{padding-left:18px;margin:8px 0}
+.empty{text-align:center;color:var(--mut);padding:18px}
+.tabs{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);display:flex;overflow-x:auto;z-index:5}
+.tabs button{flex:1 0 auto;min-width:72px;background:none;border:0;padding:8px 6px;font:inherit;font-size:.72rem;color:var(--mut);cursor:pointer;display:grid;gap:2px;justify-items:center}
+.tabs button span{font-size:1.2rem}.tabs button[aria-current=page]{color:var(--brand);font-weight:700}
+.step{display:flex;gap:10px;align-items:center;padding:8px 0}.step input{width:auto}.done{text-decoration:line-through;color:var(--mut)}
+@media(min-width:760px){body{padding-bottom:0;padding-top:0}.tabs{position:sticky;top:0;bottom:auto;order:-1;border:0;border-bottom:1px solid var(--line);justify-content:center}}
+
+.hero{background:linear-gradient(160deg,#10233d,#0b1626);border:1px solid var(--line);border-radius:22px;padding:22px;margin-bottom:14px}
+.hero h2{font-size:2rem;letter-spacing:.02em;margin:0;text-transform:uppercase}
+.hero h3{color:var(--brand);font-size:1.4rem;margin:.3rem 0}
+.hero p{color:var(--mut);margin:.3rem 0 14px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.feat button{text-align:left;font:inherit;color:var(--ink);background:#1b2f48;border:1px solid var(--line);border-radius:var(--r);padding:14px;cursor:pointer}
+.feat button span{display:block;font-size:1.4rem;color:var(--brand)}
+.feat button b{display:block;font-size:1.1rem;margin-top:6px}.feat button small{color:var(--mut)}
+.feat button:hover{border-color:var(--brand)}
+.stat b.income{color:var(--brand)}

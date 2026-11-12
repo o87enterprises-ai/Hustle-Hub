@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HustleHub</title>
+<meta name="description" content="Track side income, capture ideas, plan actions and preview a services marketplace.">
+<meta name="theme-color" content="#0b1626">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img src="icon.svg" alt="" width="32" height="32"><div><h1>HustleHub</h1><p>MVP v0.2 · prototype</p></div></div>
+  <button id="installBtn" class="btn ghost" hidden>Install</button>
+</header>
+<div class="banner" role="note">Prototype: data stays in this browser. No accounts, payments, live jobs or real bookings.</div>
+<main id="app">
+  <section id="home" class="panel" aria-labelledby="h-home"></section>
+  <section id="tracker" class="panel" aria-labelledby="h-tracker" hidden></section>
+  <section id="ideas" class="panel" aria-labelledby="h-ideas" hidden></section>
+  <section id="planner" class="panel" aria-labelledby="h-planner" hidden></section>
+  <section id="market" class="panel" aria-labelledby="h-market" hidden></section>
+  <section id="listings" class="panel" aria-labelledby="h-listings" hidden></section>
+  <section id="plans" class="panel" aria-labelledby="h-plans" hidden></section>
+</main>
+<nav class="tabs" aria-label="Sections"></nav>
+<script src="app.js"></script>
+</body>
+</html>
