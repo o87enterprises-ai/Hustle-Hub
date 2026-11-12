@@ -14,3 +14,6 @@ No accounts, cloud sync, publishing, live jobs, booking, messaging, payments, re
 
 ## Before accepting users or payments
 Auth, database/backups, payments, seller verification, privacy policy/terms, moderation/reporting, disputes/refunds, tax/legal review, fraud prevention, analytics, accessibility and security testing.
+
+## Design
+Dark navy (`#0b1626`) with a mint accent (`#3ee09a`); Home screen with four entry tiles (Find gigs, Track income, Find customers, AI business coach — the coach is a guided planner only, no live AI).
